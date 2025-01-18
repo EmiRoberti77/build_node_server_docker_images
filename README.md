@@ -115,6 +115,12 @@ use image id to delete images
 docker rmi IMAGE_ID
 ```
 
+## Force remove
+
+```bash
+docker rmi -f IMAGE_ID
+```
+
 or
 
 ```bash
@@ -131,4 +137,10 @@ docker image prune
 
 ```bash
 docker image prune -a
+```
+
+## Pull image from docker repo
+
+```bash
+docker pull emirob/emi-repo:my-express-app
 ```
