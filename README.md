@@ -4,6 +4,21 @@
 docker build -t my-express-app .
 ```
 
+## Build and specify the platform
+
+(I used linux/amd64) as i am building for GKE cluster
+
+```bash
+docker build --platform linux/amd64 -t emirob/emi-repo:my-express-app .
+```
+
+## build to support Multi-Platform
+
+```bash
+docker buildx build --platform linux/amd64,linux/arm64 -t emirob/emi-repo:my-express-app --push .
+
+```
+
 ## run the container
 
 ```bash
