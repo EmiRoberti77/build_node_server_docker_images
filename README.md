@@ -144,3 +144,9 @@ docker image prune -a
 ```bash
 docker pull emirob/emi-repo:my-express-app
 ```
+
+## Run the image that was pulled from the repo
+
+```bash
+docker run -p 8090:8090 emirob/emi-repo:my-express-app
+```
